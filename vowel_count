@@ -1,0 +1,12 @@
+names = ["Jonathan", "Rebecca", "Michael", "Aurelia", "Isadora", "Nathaniel", "Ophelia", "Emmanuel"]
+
+
+def count_vowels(name):
+    vowels = "aeiouAEIOU"
+    return sum(1 for char in name if char in vowels)
+
+
+for name in names:
+    vowel_count = count_vowels(name)
+    if vowel_count >= 3:
+        print(f"{name} has {vowel_count} vowels")
